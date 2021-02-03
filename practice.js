@@ -33,6 +33,12 @@ const result = add(5,6);
 console.log(result);
 /**undefined section ends here*/
 
+
+
+
+
+
+
 /**Double(==) and Triple equal(===)
  * Double equal doesn't check which type
  * Triple equal checks the value and it's type
@@ -62,6 +68,14 @@ if(c==d){
 }
 //But if we check with triple equal it'll be false
 /**double triple section ends here */
+
+
+
+
+
+
+
+
 
 /** map,filter and smart way to run loop section 
  ->map is used to work on any element of an array
@@ -94,12 +108,17 @@ const result3 = myArray.filter(x=> x<4); //It'll show the array elements less th
 console.log("after filtering",result3);
 /** maping filtering ends here */
 
+
+
+
+
+
 /**maping with objects */
 let myArray2=[
-{id: 1, name:'Habib', age:26},
-{id: 2, name:'Pinky', age:26},
-{id: 3, name:'Antu', age:20},
-{id: 4, name:'Rahman', age:33}
+{id: 10, name:'Habib', age:26},
+{id: 20, name:'Pinky', age:26},
+{id: 30, name:'Antu', age:20},
+{id: 40, name:'Rahman', age:33}
 ];
 const arrayNames = [];
 
@@ -112,3 +131,17 @@ console.log(arrayNames);
 //doing the same thing with map
 const result4 = myArray2.map(s => s.name);
 console.log("After maping the names are=",result4);
+
+//using filter to get specific students
+const bigger = myArray2.filter(s1 =>s1.id>20);
+console.log("showing ids bigger than 20",bigger);
+
+//find - shows the first found element in array
+const biggerFirst = myArray2.find(s1 =>s1.id>20);
+console.log("showing first id bigger than 20",biggerFirst);
+/**maping with objects ends*/
+
+
+
+
+/**Scope, block scope,access outer scope */
